@@ -1,0 +1,25 @@
+[project]
+name = "daily-ds"
+version = "0.1.0"
+description = "Scratchpad for small daily data science exercises"
+readme = "README.md"
+authors = [
+    { name = "Siilbon", email = "karliansiil@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "numpy",
+    "pandas>=3.1.1",
+    "plotly>=7.1.0",
+    "scikit-learn>=1.9.1",
+    "statsmodels>=0.15.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel",
+    "nbformat",
+]
+
+[tool.uv]
+package = false
